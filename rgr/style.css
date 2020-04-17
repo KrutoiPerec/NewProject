@@ -20,3 +20,34 @@ hr {
     
 
 }
+.Top
+{
+    background-color: black;
+    width: 101.05%;
+    height: 70px;
+    margin-top: -10px;
+    margin-left: -8px;
+}
+body
+{
+    background-color: grey;
+    position:relative;
+}
+.Centre
+{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 600px;
+}
+.Bot
+{
+    position:absolute;
+	bottom: -12;
+    background-color: black;
+    margin-left: 5%;
+    float: bottom;
+    width: 90%;
+    height: 53px;
+}
