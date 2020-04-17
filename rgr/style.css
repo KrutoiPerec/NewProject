@@ -17,25 +17,25 @@ hr {
 	border-radius: 50px;
     border: 1px solid #000000;
     float: right;
-    
+    margin-top: 2px;
 
 }
 .Top
 {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 101.05%;
-    height: 70px;
+    height: 80px;
     margin-top: -10px;
     margin-left: -8px;
 }
 body
 {
-    background-color: grey;
+    background-color: rgb(255, 0, 0);
     position:relative;
 }
 .Centre
 {
-    background-color: white;
+    background-color: rgb(0, 4, 255);
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -45,9 +45,23 @@ body
 {
     position:absolute;
 	bottom: -12;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin-left: 5%;
     float: bottom;
     width: 90%;
-    height: 53px;
+    height: 80px;
+}
+
+.logos {
+   text-align: center;
+    margin-bottom: 25px;
+}
+
+#inst_logo {
+    width: 75px;
+    height: 75px;	
+}
+#vk_logo {
+    width: 70px;
+    height: 70px;	
 }
