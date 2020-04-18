@@ -1,26 +1,83 @@
 <!DOCTYPE html>
-<link rel='stylesheet' href="style.css">
+
 <html lang="ru">
 <head>
+    <link rel='stylesheet' href="style.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.glide.min.js"></script>   
     <title>Movie-Movie.kz</title>
     <div class='Top'>
-        <p class="Title" >Movie - <span style="color: rgb(0, 0, 0)">Movie.kz</span></p>
+        <p class="Title">Movie - <span style="color: rgb(240, 229, 229)">Movie.kz</span></p>
         <a href="reg\index.html" ><img src="user_icon.png" id="icon"></a>
-   
+        <br><br><br>
+        <div class="Themes">
+        <a href="reg\index.html" id="theme">Статьи</a>
+        <a href="reg\index.html" id="theme">Новости</a>
+        <a href="reg\index.html" id="theme">Трейлеры</a>
+    </div>
     </div>
     
 </head>
 <body>
-    
     <div class="Centre">
-
+        <div id="w">
+            <br><br><br><br><br><br>
+            <div class="slider">
+              <ul class="slides">
+                <li class="slide">
+                  <figure>
+                    <img src="img/1.jpg" id="slide_img">
+                  </figure>             
+                <a id="slide_descr">Новый фильм "Джентльблюны" от Рая Гичи</a>
+                </li>
+                <li class="slide">
+                  <figure>
+                    <img src="img/2.jpg">
+                  </figure>
+                  <a id="slide_descr">Привет</a>
+                </li>
+                <li class="slide">
+                  <figure>
+                    <img src="img/3.jpg">
+                  </figure>
+                  <a id="slide_descr">Новый фильм "Джентльблюны" от Рая Гичи</a>
+                </li>
+                <li class="slide">
+                  <figure>
+                    <img src="img/4.jpg">
+                  </figure>
+                  <a id="slide_descr">Новый фильм "Джентльблюны" от Рая Гичи</a>
+                </li>
+                <li class="slide">
+                  <figure>
+                    <img src="img/5.jpg">
+                  </figure>
+                  <a id="slide_descr">Новый фильм "Джентльблюны" от Рая Гичи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         
     </div>
     <div class="Bot">
        <figure class="logos">
-        <a href="https://www.instagram.com/mirov_rana/"><img src="inst_logo.png" id="inst_logo"> </a>
-        <a href="https://vk.com/inmw8miracle"><img src="vk_logo.png" id="vk_logo"> </a>
-
+        <a href="https://www.instagram.com/mirov_rana/"><img src="inst_logo.png" id="inst_logo"></a>
+        <a href="https://vk.com/inmw8miracle"><img src="vk_logo.png" id="vk_logo"></a>
+    </figure>
+    <figure class="logos">
+        <a>© 2020,Movie-Movie.kz.</a>
+        <a>Все права защищены</a>
     </figure>
     </div>
 </body>
+<script type="text/javascript">
+    $(function(){
+      $('.slider').glide({
+        autoplay: 1000000,
+        hoverpause: true,
+        arrowRightText: '&rarr;',
+        arrowLeftText: '&larr;'
+      });
+    });
+    </script>
     </html>
