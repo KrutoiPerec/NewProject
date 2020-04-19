@@ -1,7 +1,47 @@
+
+@import url('http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700');
+
+
+.news{
+  position: absolute;
+  width: 262px;
+  height: 100%;
+  overflow: hidden;
+}
+#news2{
+    left: 293px;
+}
+#news3{
+    left: 586px;
+}
+#news4{
+    right:0px;
+}
+
+.news_decr{
+  color: #FFFEFE;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-width: 262px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
+
+
 #user_name{
   position: absolute;
-  right: 345px;
-  top:65px;
+  right: 95px;
+  top:65px; 
+  font-family: 'Titillium Web';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 37px;
+}
+#user_name:hover{
+  color: #EEEEEE;
 }
 
 .news_block{ 
@@ -9,8 +49,8 @@
   width: 1143px;
   height: 374px;
   float: bottom;
-  background-color:#C4C4C4;
   left: 147px;
+  
 }
 
 
@@ -38,28 +78,50 @@ div.Button p{
 
 .Themes {
     text-align: center;
-    margin-top: 78px;
+    position: absolute;
+    top: 114px;
+    left: 196px;
 }
-#theme {
+#theme1 , #theme2 ,#theme3{
   text-decoration: none;
-  padding:95px;
   font-size: xx-large;
-  font-family: 'Titillium Web';
   font-size: 48px;
   line-height: 73px;
   color: #EDEDED;
 
 }
-#theme:hover {
+#theme1{
+  position: absolute;
+  left: 0px;
+}
+#theme2{
+  position: absolute;
+  left: 400px;
+}
+#theme3{
+  position: absolute;
+  left: 820px;
+}
+
+#theme1:hover ,#theme2:hover,#theme3:hover{
     color: black;
 }
 .Title 
-{
+{   
+    position: absolute;
+    top: 28px;
+    left: 20px;
     color: red;
-    display: inline;
     font-size: 40px;
     font-weight: bold;
 }
+
+.Title:hover {
+font: 2em;
+text-shadow: red 0 0 2px;
+font-size: 40px;
+}
+
 hr {
     border: none; /* Убираем границу */
     background-color: rgb(0, 0, 0); /* Цвет линии */
@@ -67,13 +129,13 @@ hr {
     height: 3px; /* Толщина линии */
    }
 #icon {
+  position: absolute;
+  top: 15px;
+  right: 119px;
   width: 59px;
   height: 58px;
 	border-radius: 50px;
-  border: 1px solid #ffffff;
   float: right;
-  margin-top: 5px;
-  margin-right: 119px;
 
 }
 #slide_descr{
@@ -82,8 +144,8 @@ hr {
     height: 70px;
    
     height: auto;
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
     color: rgb(233, 132, 0);
     font-family: Belgrano;
     font-style: normal;
@@ -96,37 +158,39 @@ align-items: center;
     opacity: 0.5;
 }
 .Top
-{
+{   
+    position:absolute; 
+    left: 12%;
     opacity: 0.9;
     margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: rgb(11, 11, 19);
     width: 1440px;
     height: 253px;
 }
-body
+html
 {
     background-image: url(background.jpg);
     position:relative;
+    background-attachment: fixed;
 }
 .Centre
 {   
     background-color: rgb(11, 11, 19);
     opacity: 0.9;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    position: absolute;
+    top: 243px;
+    left: 12%;
     width: 1440px;
     height: 1588px;
 }
 .Bot
 {
     position:absolute;
-	  bottom: -1200px;
+	  bottom: 0px;
+    left: 0%;
+    opacity: 0.9;
     background-color: rgb(11, 11, 19);
-    margin-left: 5%;
-    width: 90%;
+    width: 1440px;
     height: 170px;
 }
 
@@ -158,10 +222,6 @@ body
     height: 1080px;
 }
 
-
-
-
-@import url('http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
