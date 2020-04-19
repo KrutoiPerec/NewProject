@@ -1,13 +1,53 @@
+#user_name{
+  position: absolute;
+  right: 345px;
+  top:65px;
+}
+
+.news_block{ 
+  position: absolute;
+  width: 1143px;
+  height: 374px;
+  float: bottom;
+  background-color:#C4C4C4;
+  left: 147px;
+}
+
+
+.Button{
+  width: 165px;
+  height: 51px;
+  background-color: #18A0FB;
+  text-align: center;
+  border-radius: 25.5px;
+  position: relative;
+}
+div.Button p{
+  position: absolute;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #EDEDED;
+  margin: 0;
+  top: 20%;
+  left: 30%;
+}
 
 .Themes {
     text-align: center;
-    
+    margin-top: 78px;
 }
 #theme {
-    text-decoration: none;
-    padding:80px;
-    font-size: xx-large;
-    text-decoration-color: black;
+  text-decoration: none;
+  padding:95px;
+  font-size: xx-large;
+  font-family: 'Titillium Web';
+  font-size: 48px;
+  line-height: 73px;
+  color: #EDEDED;
 
 }
 #theme:hover {
@@ -26,13 +66,14 @@ hr {
     color: rgb(0, 0, 0); /* Цвет линии для IE6-7 */
     height: 3px; /* Толщина линии */
    }
-   #icon {
-	width: 75px;
-	height: 75px;	
+#icon {
+  width: 59px;
+  height: 58px;
 	border-radius: 50px;
-    border: 1px solid #ffffff;
-    float: right;
-    margin-top: 5px;
+  border: 1px solid #ffffff;
+  float: right;
+  margin-top: 5px;
+  margin-right: 119px;
 
 }
 #slide_descr{
@@ -56,11 +97,13 @@ align-items: center;
 }
 .Top
 {
+    opacity: 0.9;
     margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(11, 11, 19);
-    width: 90%;
-    height: 150px;
-    margin-left: 5%;
+    width: 1440px;
+    height: 253px;
 }
 body
 {
@@ -68,21 +111,21 @@ body
     position:relative;
 }
 .Centre
-{
+{   
     background-color: rgb(11, 11, 19);
     opacity: 0.9;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 600px;
+    position: relative;
+    width: 1440px;
+    height: 1588px;
 }
 .Bot
 {
     position:absolute;
-	bottom: -12;
+	  bottom: -1200px;
     background-color: rgb(11, 11, 19);
     margin-left: 5%;
-    float: bottom;
     width: 90%;
     height: 170px;
 }
