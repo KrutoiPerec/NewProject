@@ -203,7 +203,7 @@ html
     top: 243px;
     left: 10%;
     width: 80%;
-    height: 1588px;
+    height: 1080px;
 }
 .Bot
 {
@@ -216,12 +216,18 @@ html
     height: 170px;
 }
 
-
+.logos1 {
+  position: absolute;
+  text-align: center;
+  bottom: 25%;
+  left: 60%;
+  color: #ffffff;
+}
 
 .logos {
   position: absolute;
-  bottom: 20%;
-  left: 60%;
+  bottom: 15%;
+  left: 57%;
   color: #ffffff;
 }
 
