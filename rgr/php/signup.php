@@ -5,6 +5,7 @@
     $user_mail = $_POST['user_mail'];
     $user_passwd = $_POST['user_password'];
     $hash = password_hash($password,PASSWORD_DEFAULT);
+  
     $result = mysqli_query($connection, "INSERT INTO users (`Name`, `Mail`, `Password`) 
     VALUES ('$user_name', '$user_mail' , '$hash')");
             if($result)
@@ -13,6 +14,8 @@
             }
             else
             {
+                echo $user_name,$user_mail,$user_passwd;
                 echo "ошибка";
             } 
+         
             ?>

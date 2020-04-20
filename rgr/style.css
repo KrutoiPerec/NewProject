@@ -108,6 +108,7 @@ div.Button_Reg p{
 .Themes {
     text-align: center;
     position: absolute;
+    width: 75%;
     top: 114px;
     left: 12%;
 }
@@ -120,16 +121,10 @@ div.Button_Reg p{
 
 }
 #theme1{
-  position: absolute;
-  left: 0px;
-}
-#theme2{
-  position: absolute;
-  left: 400px;
+  float: left;
 }
 #theme3{
-  position: absolute;
-  left: 820px;
+  float: right;
 }
 
 #theme1:hover ,#theme2:hover,#theme3:hover{
