@@ -190,10 +190,9 @@ hr {
     position:absolute; 
     left: 12%;
     opacity: 0.9;
-    margin-top: -10px;
     background-color: rgb(11, 11, 19);
-    width: 1440px;
-    height: 253px;
+    width: 75%;
+    height: 608%;
 }
 html
 {
@@ -208,7 +207,7 @@ html
     position: absolute;
     top: 243px;
     left: 12%;
-    width: 1440px;
+    width: 75%;
     height: 1588px;
 }
 .Bot
@@ -218,7 +217,7 @@ html
     left: 0%;
     opacity: 0.9;
     background-color: rgb(11, 11, 19);
-    width: 1440px;
+    width: 75%;
     height: 170px;
 }
 
