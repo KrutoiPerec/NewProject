@@ -66,7 +66,7 @@
   right: 5%;
 }
 .Button_Entr{
-  width: 165px;
+  width: 120px;
   height: 51px;
   background-color: #18A0FB;
   text-align: center;
@@ -74,35 +74,35 @@
   position: relative;
   float: right;
   top: 10%;
-  right: 5%;
+  right: 6%;
 }
 
 div.Button_Entr p{
   position: absolute;
-  font-family: 'Titillium Web';
+  font-family: Veranda ,sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
   color: #EDEDED;
   margin: 0;
   top: 20%;
-  left: 36%;
+  left: 30%;
 }
 
 div.Button_Reg p{
   position: absolute;
-  font-family: 'Titillium Web';
+   font-family: Veranda ,sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
   color: #EDEDED;
   margin: 0;
   top: 20%;
-  left: 17%;
+  left: 12%;
 }
 
 .Themes {
