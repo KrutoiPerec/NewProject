@@ -1,9 +1,22 @@
 
 @import url('http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700');
 
+h4{
+  text-decoration: none;
+  font-size: 90px;
+  line-height: 73px;
+  color: #EDEDED;
+}
+
+.Commentary{
+  position: absolute;
+  top: 100em;
+  left: 5em;
+}
+
 .rev_text{
   position: absolute;
-  top: 30%;
+  top: 45%;
   font-size: 13px;
 }
 
@@ -18,7 +31,7 @@
   position: absolute;
   width: 750px;
   height: 422px;
-  left: 145px;
+  left: 25em;
 }
 
 .news{
@@ -169,13 +182,13 @@ hr {
 }
 .Top
 {   
+      
     position:absolute; 
-    left: 12%;
+    left: 10%;
     opacity: 0.9;
-    margin-top: -10px;
     background-color: rgb(11, 11, 19);
-    width: 1440px;
-    height: 253px;
+    width: 80%;
+    height: 608%;
 }
 html
 {
@@ -185,13 +198,13 @@ html
 }
 .Centre
 {   
-    background-color: rgb(11, 11, 19);
+   background-color: rgb(11, 11, 19);
     opacity: 0.9;
     position: absolute;
     top: 243px;
-    left: 12%;
-    width: 1440px;
-    height: 1588px;
+    left: 10%;
+    width: 80%;
+    height: 1080px;
 }
 .Bot
 {
@@ -206,7 +219,7 @@ html
 
 .logos {
   position: absolute;
-  top: 52%;
+  top: 90em;
   text-align: center;
   color: #ffffff;
 }
