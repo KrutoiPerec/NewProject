@@ -54,15 +54,30 @@
 }
 
 
-.Button{
+.Button_Reg{
   width: 165px;
   height: 51px;
   background-color: #18A0FB;
   text-align: center;
   border-radius: 25.5px;
   position: relative;
+  float: right;
+  top: 10%;
+  right: 5%;
 }
-div.Button p{
+.Button_Entr{
+  width: 165px;
+  height: 51px;
+  background-color: #18A0FB;
+  text-align: center;
+  border-radius: 25.5px;
+  position: relative;
+  float: right;
+  top: 10%;
+  right: 5%;
+}
+
+div.Button_Entr p{
   position: absolute;
   font-family: 'Titillium Web';
   font-style: normal;
@@ -73,7 +88,21 @@ div.Button p{
   color: #EDEDED;
   margin: 0;
   top: 20%;
-  left: 30%;
+  left: 36%;
+}
+
+div.Button_Reg p{
+  position: absolute;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #EDEDED;
+  margin: 0;
+  top: 20%;
+  left: 17%;
 }
 
 .Themes {
@@ -136,7 +165,6 @@ hr {
   height: 58px;
 	border-radius: 50px;
   float: right;
-
 }
 #slide_descr{
     position: absolute;
