@@ -1,52 +1,30 @@
 <?php
+	 require_once 'connection.php';
+	 session_start();
+	 $name = $_POST['user_name'];
+	 $password = $_POST['user_password'];
+	
+	 $result = mysqli_query($connection ,"SELECT Password FROM users WHERE Name = '".$name."'");
+	 if($result != NULL)
+	 {
+		while ($row = $result->fetch_assoc()) {
+		if($row['Password'] == $password)
+		{
+			echo"<script type='text/javascript'>alert('Успешно вошли'); window.location.href='../index.php';</script>";
+		}
+		else
+		{
+			echo"<script type='text/javascript'>alert('Неверное имя или пароль'); window.location.href='../autorication/Auto.html';</script>";
+		}
+		}
+		
+	 }
+	 else
+	 {
+		 echo "Пользователь не найден";
+	 }
+	 
+	 
+	 //$_SESSION['login'] =  
 
-
-$error = array(); //массив для ошибок 	
-if ($_POST['login'] != "" && $_POST['password'] != "") //если поля заполнены 	
-
-{ 		
-	$login = $_POST['login']; 
-	$password = $_POST['password'];
-
-	$rez = mysql_query("SELECT * FROM users WHERE login=$login"); //запрашиваем строку из БД с логином, введённым пользователем 		
-	if (mysql_num_rows($rez) == 1) //если нашлась одна строка, значит такой юзер существует в БД 		
-
-	{ 			
-		$row = mysql_fetch_assoc($rez); 			
-		if (md5(md5($password).$row['salt']) == $row['password']) //сравниваем хэшированный пароль из БД с хэшированными паролем, введённым пользователем и солью (алгоритм хэширования описан в предыдущей статье) 						
-
-		{ 
-		//пишем логин и хэшированный пароль в cookie, также создаём переменную сессии
-		setcookie ("login", $row['login'], time() + 50000); 						
-		setcookie ("password", md5($row['login'].$row['password']), time() + 50000); 					
-		$_SESSION['id'] = $row['id'];	//записываем в сессию id пользователя 				
-
-		$id = $_SESSION['id']; 				
-		lastAct($id); 				
-		return $error; 			
-	} 			
-	else //если пароли не совпали 			
-
-	{ 				
-		$error[] = "Неверный пароль"; 										
-		return $error; 			
-	} 		
-} 		
-	else //если такого пользователя не найдено в БД 		
-
-	{ 			
-		$error[] = "Неверный логин и пароль"; 			
-		return $error; 		
-	} 	
-} 	
- 
-
-	else 	
-	{ 		
-		$error[] = "Поля не должны быть пустыми!"; 				
-		return $error; 	
-    } 
-    
-
-    
 ?>
