@@ -46,10 +46,10 @@
 
 .news_block{ 
   position: absolute;
-  width: 1143px;
+  width: 90%;
   height: 374px;
   float: bottom;
-  left: 10%;
+  left: 6%;
   
 }
 
@@ -183,10 +183,10 @@ hr {
 .Top
 {   
     position:absolute; 
-    left: 12%;
+    left: 10%;
     opacity: 0.9;
     background-color: rgb(11, 11, 19);
-    width: 75%;
+    width: 80%;
     height: 608%;
 }
 html
@@ -201,8 +201,8 @@ html
     opacity: 0.9;
     position: absolute;
     top: 243px;
-    left: 12%;
-    width: 75%;
+    left: 10%;
+    width: 80%;
     height: 1588px;
 }
 .Bot
@@ -212,7 +212,7 @@ html
     left: 0%;
     opacity: 0.9;
     background-color: rgb(11, 11, 19);
-    width: 75%;
+    width: 80%;
     height: 170px;
 }
 
