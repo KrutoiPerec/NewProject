@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <html lang="ru">
+
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;1,700&display=swap" rel="stylesheet">
@@ -11,8 +13,18 @@
     <div class='Top'>
         <p class="Title">Movie - <span style="color: rgb(240, 229, 229)">Movie.kz</span></p>
         <!--<a href="reg\registration.html" ><img src="user_icon.png" id="icon"><p id="user_name">NickName</p></a>-->
-        <a href="reg/registration.html"><div class="Button_Reg"><p >Регистрация</p></div></a>
-        <a href="autorication/Auto.html"><div class="Button_Entr"><p >Вход</p></div></a>
+        <?php
+        session_start();
+        if(!isset($_SESSION["session_username"])):
+          ?>
+          <a href="reg/registration.html"> <div class="Button_Reg"> <p>Регистрация</p> </div> </a>
+          <a href="autorication/Auto.html"><div class="Button_Entr"><p >Вход</p></div></a>
+        <?php else: ?>
+          <div class="Auto">
+            <a href="php/logout.php"><img class="AutoImg" src="user_icon.png"></a>
+            <p class="AutoName"> <?php echo $_SESSION['session_username'] ?>  </p>
+          </div>
+        <?php endif; ?>
         <br><br><br>
         <div class="Themes">
         <a href="reg\index.html" id="theme1">Статьи</a>
@@ -30,7 +42,7 @@
               <ul class="slides">
                 <li class="slide">
                   <figure>
-                    <img src="img/news.jpg" id="slide_img">
+                    <a href="Articl/SuicideSquad.html"><img src="img/news.jpg" id="slide_img"></a>
                   </figure>             
                 </li>
                 <li class="slide">
@@ -87,3 +99,4 @@
     });
     </script>
     </html>
+    

@@ -10,6 +10,7 @@
 		while ($row = $result->fetch_assoc()) {
 		if($row['Password'] == $password)
 		{
+			$_SESSION['session_username']=$name;
 			echo"<script type='text/javascript'>alert('Успешно вошли'); window.location.href='../index.php';</script>";
 		}
 		else
