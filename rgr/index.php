@@ -56,12 +56,12 @@
                 </li>
                 <li class="slide">
                   <figure>
-                    <img src="img/news.jpg" id="slide_img">
+                    <a href="Articl/DJ.php"><img src="DJ.jpg" id="slide_img"></a>
                   </figure>
                 </li>
                 <li class="slide">
                   <figure>
-                    <img src="img/5.jpg" id="slide_img">
+                  <a href="Articl/Spider.php"><img src="Spider.jpg" id="slide_img"></a>
                   </figure>
                 </li>
               </ul>
