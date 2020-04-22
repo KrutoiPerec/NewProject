@@ -47,12 +47,12 @@
                 </li>
                 <li class="slide">
                   <figure>
-                    <img src="img/news.jpg" id="slide_img">
+                  <a href="Articl/OnceInHollywood.php"><img src="Once_Upon_a_Time_in_Hollywood_i01.jpg" id="slide_img"></a>
                   </figure>
                 </li>
                 <li class="slide">
                   <figure>
-                    <img src="img/news.jpg" id="slide_img">
+                  <a href="Articl/Warcraft.php"><img src="warcraft.jpg" id="slide_img"></a>
                   </figure>
                 </li>
                 <li class="slide">

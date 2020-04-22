@@ -3,10 +3,10 @@
 <html lang="ru">
 <head>
     
-    <link rel='stylesheet' href="style.css">
+<link rel='stylesheet' href="style.css">
     <title>Movie-Movie.kz</title>
     <div class='Top'>
-        <p class="Title">Movie - <span style="color: rgb(240, 229, 229)">Movie.kz</span></p>
+    <a href="../index.php"><p class="Title">Movie - <span style="color: rgb(240, 229, 229)">Movie.kz</span></p></a>
         <?php
         session_start();
         if(!isset($_SESSION["session_username"])):
@@ -30,7 +30,7 @@
 <body>
     <div class="Centre">
 
-        <img src="../img/4.jpg" id="rev_img">
+        <img src="Squad.png" id="rev_img">
         <div class="rev_text">
         <p class="Text">
             <p class="Text">Фильм, который всеми фибрами души говорит, что он крутой, только это совершенно не так. А к тому моменту, когда ты его досмотришь до конца понимаешь, насколько он сильно плох в тех моментах, где он должен был выстреливать.</p>
