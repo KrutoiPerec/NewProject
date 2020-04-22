@@ -52,10 +52,6 @@
       <iframe width="1220" height="624" src="https://www.youtube.com/embed/zw81ihoukKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-
-
-
-
 		<div class="Bot">
 		</div>
 
