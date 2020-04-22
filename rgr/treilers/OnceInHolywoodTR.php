@@ -16,7 +16,7 @@
           ?>
           <a href="reg/registration.html"> <div class="Button_Reg"> <p>Регистрация</p> </div> </a>
           <a href="autorication/Auto.html"><div class="Button_Entr"><p >Вход</p></div></a>
-        <?php else: ?>
+        <?php else: $_SESSION['film'] = 'OnceInHolywoodTR'; ?>
           <div class="Auto">
             <a href="php/logout.php"><img class="AutoImg" src="user_icon.png"></a>
             <p class="AutoName">  <?php echo $_SESSION['session_username'] ?>  </p>
@@ -51,10 +51,53 @@
     <div class="Treiler_div">
       <iframe width="1220" height="624" src="https://www.youtube.com/embed/zw81ihoukKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <figure class="logos">
+            <a href="https://www.instagram.com/mirov_rana/"><img src="inst_logo.png" id="inst_logo"></a>
+            <a href="https://vk.com/inmw8miracle"><img src="vk_logo.png" id="vk_logo"></a>
+    </figure>    
+    <form action="../php/Kom.php" method="post" >
+        <div class="Commentary">
+               <img  src="user_icon.png" class="Kom">
+               <textarea name="TextArea" class="AreaKom"></textarea>
+               <div>
+                <button name="button" type="submit" class="KomButton">Отправить</button>
+                </div>
+        </form>    
+        </div>
+        <div class="Kommm">
+        <?php
+        $connection = mysqli_connect( $host = 'localhost', $user = 'root', $password = 'A1i2s3u4l5', $database = 'movie');
+        $link = mysqli_connect($host, $user, $password, $database)
+        or die("Ошибка" . mysqli_error($link));
+            $Film = "OnceInHolywoodTR";
+            $query ="SELECT * FROM com  WHERE Film = '$Film' ";
+            $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+            if($result)
+            {
+            $rows = mysqli_num_rows($result);
+            for ($i = 0 ; $i < $rows ; ++$i)
+            {
+                $row = mysqli_fetch_row($result); ?>
+                <div class="Out">
+                    <img  src="user_icon.png" class="Kom">
+                    <textarea class="AreaKomOut"> <?php echo $row[1]  ?> </textarea>
+                    <div>
+                    <h class="Name"> <?php echo $row[0]  ?></h>
+                    </div>
+                    <div>
+                </div>
+                </div>
+                <?php
+            
+            }
+                mysqli_free_result($result);
+            }
+                mysqli_close($link);
 
-		<div class="Bot">
-		</div>
 
+            ?>
+        </div>
+	
 	</div>
 
 
