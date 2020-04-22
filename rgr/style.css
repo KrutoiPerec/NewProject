@@ -327,7 +327,9 @@ p {
   line-height: 1.2em;
   color: #777;
 }
-
+.reg{
+  margin-top: 30%;
+}
 
 /** page structure **/
 #w {
