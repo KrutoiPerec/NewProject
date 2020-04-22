@@ -58,10 +58,10 @@
         </div>
         <div class="Kommm">
         <?php
-        $connection = mysqli_connect( $host = 'localhost', $user = 'root', $password = 'A1i2s3u4l5', $database = 'movie');
+        $connection = mysqli_connect( $host = 'localhost', $user = 'root', $password = '', $database = 'movie');
         $link = mysqli_connect($host, $user, $password, $database)
         or die("Ошибка" . mysqli_error($link));
-            $Film = $_SESSION['film'];
+            $Film = "OnceInHollywood";
             $query ="SELECT * FROM com  WHERE Film = '$Film' ";
             $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
             if($result)
