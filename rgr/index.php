@@ -27,12 +27,11 @@
         <?php endif; ?>
         <br><br><br>
         <div class="Themes">
-        <a href="reg\index.html" id="theme1">Статьи</a>
-        <a href="reg\index.html" id="theme2">Новости</a>
-        <a href="reg\index.html" id="theme3">Трейлеры</a>
+        <a href="reg/index.html" id="theme1">Статьи</a>
+        <a href="reg/index.html" id="theme2">Новости</a>
+        <a href="treilers/OnceInHolywoodTR.php" id="theme3">Трейлеры</a>
     </div>
     </div>
-    
 </head>
 <body>
     <div class="Centre">
