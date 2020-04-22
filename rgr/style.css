@@ -8,6 +8,12 @@
   height: 100%;
   overflow: hidden;
 }
+
+.news_image{
+  width: 100px;
+  height: 80px;
+}
+
 #news2{
     left: 26%;
 }

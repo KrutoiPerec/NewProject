@@ -11,7 +11,7 @@
     <script type="text/javascript" src="js/jquery.glide.min.js"></script>   
     <title>Movie-Movie.kz</title>
     <div class='Top'>
-        <p class="Title">Movie - <span style="color: rgb(240, 229, 229)">Movie.kz</span></p>
+        <a href="index.php"><p class="Title">Movie - <span style="color: rgb(240, 229, 229)">Movie.kz</span></p></a>
         <!--<a href="reg\registration.html" ><img src="user_icon.png" id="icon"><p id="user_name">NickName</p></a>-->
         <?php
         session_start();
@@ -27,8 +27,8 @@
         <?php endif; ?>
         <br><br><br>
         <div class="Themes">
-        <a href="reg/index.html" id="theme1">Статьи</a>
-        <a href="reg/index.html" id="theme2">Новости</a>
+        <a href="#news_block" id="theme1">Статьи</a>
+        <a href="#news_block" id="theme2">Новости</a>
         <a href="treilers/OnceInHolywoodTR.php" id="theme3">Трейлеры</a>
     </div>
     </div>
@@ -67,11 +67,11 @@
               </ul>
             </div>
           </div>
-      <div class="news_block">
-          <div class="news" id="news1"><img src="img/1.jpg" class="news_image"><p class="news_decr">Правительство решает дать команде суперзлодеев шанс на искупление. Подвох в том, что их отправляют на миссию, где они, вероятнее всего, погибнут.</p></div>
-          <div class="news" id="news2"><img src="img/2.jpg" class="news_image"><p class="news_decr">  Переведено с английского языка.-«Бхарат» - это драматический фильм индийского языка на хинди 2019 года, написанный и режиссер Али Аббас Зафар. Это совместно произведено Атулом Агнихотри, Альвирой Ханом Агнихотри, Бхушаном Кумаром, Кришаном Кумаром, Нихилом Намитом и Салманом Ханом под лозунгами Reel Life Productions, Salman Khan Films и T-Series</p></div>
-          <div class="news" id="news3"><img src="img/3.jpg" class="news_image"><p class="news_decr">  Готэм, начало 1980-х годов. Комик Артур Флек живет с больной матерью, которая с детства учит его «ходить с улыбкой». Пытаясь нести в мир хорошее и дарить людям радость, Артур сталкивается с человеческой жестокостью и постепенно приходит к выводу, что этот мир получит от него не добрую улыбку, а ухмы…</p></div>
-          <div class="news" id="news4"><img src="img/4.jpg" class="news_image"><p class="news_decr">  Веками магия и неприступные стены защищали людей от любых напастей. Но древнее зло, побежденное и забытое тысячелетия назад, пробудилось.</p></div>
+      <div class="news_block" id="news_block">
+          <div class="news" id="news1"><a href="Articl/SuicideSquad.php"><img src="img/1.jpg" class="news_image"><p class="news_decr">Правительство решает дать команде суперзлодеев шанс на искупление. Подвох в том, что их отправляют на миссию, где они, вероятнее всего, погибнут.</p></a></div>
+          <div class="news" id="news2"><a href="Articl/OnceInHollywood.php"><img src="Once_Upon_a_Time_in_Hollywood_i01.jpg" class="news_image"><p class="news_decr">  Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». По сюжету, известный ТВ актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p></a></div>
+          <div class="news" id="news3"><a href="Articl/Warcraft.php"><img src="img/3.jpg" class="news_image"><p class="news_decr">  Готэм, начало 1980-х годов. Комик Артур Флек живет с больной матерью, которая с детства учит его «ходить с улыбкой». Пытаясь нести в мир хорошее и дарить людям радость, Артур сталкивается с человеческой жестокостью и постепенно приходит к выводу, что этот мир получит от него не добрую улыбку, а ухмы…</p></a></div>
+          <div class="news" id="news4"><a href="Articl/Warcraft.php"><img src="img/4.jpg" class="news_image"><p class="news_decr">  Веками магия и неприступные стены защищали людей от любых напастей. Но древнее зло, побежденное и забытое тысячелетия назад, пробудилось.</p></a></div>
       </div>  
       
     <div class="Bot"> 
