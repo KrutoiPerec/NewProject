@@ -557,10 +557,11 @@ p {
   border: 2px solid #18A0FB;
   margin-left: 400px;
   font-size: 18px;
+  float: right;
 }
 .AreaKom
 {
-  width:1000px;
+  width:1300px;
   height: 60px;
   margin-left: 10px;
   margin-top: 5px;
@@ -569,12 +570,12 @@ p {
 }
 .Kommm
 {
-  margin-top: 1200px;
+  margin-top: 1550px;
 }
 .Out
 {
   margin-top: 20px;
-  margin-left: 60px;
+  margin-left: 75px;
 }
 .Name{
   font-size: 30px;
@@ -583,7 +584,7 @@ p {
 }
 .AreaKomOut
 {
-  width:1000px;
+  width:1300px;
   height: 60px;
   margin-left: 10px;
   margin-top: 5px;

@@ -14,8 +14,8 @@
         session_start();
         if(!isset($_SESSION["session_username"])):
           ?>
-          <a href="reg/registration.html"> <div class="Button_Reg"> <p>Регистрация</p> </div> </a>
-          <a href="autorication/Auto.html"><div class="Button_Entr"><p >Вход</p></div></a>
+          <a href="../reg/registration.html"> <div class="Button_Reg"> <p>Регистрация</p> </div> </a>
+          <a href="../autorication/Auto.html"><div class="Button_Entr"><p >Вход</p></div></a>
         <?php else: $_SESSION['film'] = 'OnceInHolywoodTR'; ?>
           <div class="Auto">
             <a href="php/logout.php"><img class="AutoImg" src="user_icon.png"></a>
@@ -55,7 +55,7 @@
             <a href="https://www.instagram.com/mirov_rana/"><img src="inst_logo.png" id="inst_logo"></a>
             <a href="https://vk.com/inmw8miracle"><img src="vk_logo.png" id="vk_logo"></a>
     </figure>    
-    <form action="../php/Kom.php" method="post" >
+    <form action="../php/TR.php" method="post" >
         <div class="Commentary">
                <img  src="user_icon.png" class="Kom">
                <textarea name="TextArea" class="AreaKom"></textarea>
@@ -66,7 +66,7 @@
         </div>
         <div class="Kommm">
         <?php
-        $connection = mysqli_connect( $host = 'localhost', $user = 'root', $password = 'A1i2s3u4l5', $database = 'movie');
+        $connection = mysqli_connect( $host = 'localhost', $user = 'root', $password = '', $database = 'movie');
         $link = mysqli_connect($host, $user, $password, $database)
         or die("Ошибка" . mysqli_error($link));
             $Film = "OnceInHolywoodTR";
