@@ -3,29 +3,30 @@
 
 h4{
   text-decoration: none;
+  text-align: left;
   font-size: 90px;
   line-height: 73px;
-  color: #EDEDED;
 }
 
 .Commentary{
   position: absolute;
-  top: 100em;
-  left: 40%;
+  top: 1050px;
+  left: 5%;
 }
 .rev_text{
   margin-left: 2%;
   margin-right: 2%;
   position: absolute;
   text-align: justify;
-  top: 45%;
+  top: 450px;
   font-size: 13px;
 }
 
 .Kom{
-  width: 59px;
-  height: 58px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
+  float: left;
 }
 
 
@@ -52,6 +53,41 @@ h4{
     right:0px;
 }
 
+.Button_Reg{
+  width: 165px;
+  height: 51px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  background-color: #18A0FB;
+  border-radius: 25.5px;
+  position: relative;
+  float: right;
+  top: 10%;
+  right: 5%;
+}
+.Button_Entr{
+  width: 120px;
+  height: 51px;
+  background-color: #18A0FB;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  border-radius: 25.5px;
+  position: relative;
+  float: right;
+  top: 10%;
+  right: 6%;
+}
+
+.reg{
+  margin-top: 10%;
+}
+.reg1{
+  margin-top: 8%;
+}
 .news_decr{
   color: #FFFEFE;
   font-size: 20px;
@@ -206,7 +242,7 @@ html
     top: 243px;
     left: 10%;
     width: 80%;
-    height: 1080px;
+    height: 1700px;
 }
 .Bot
 {
@@ -222,7 +258,7 @@ html
 .logos {
   position: absolute;
   left: 45%;
-  top: 90em;
+  margin-top: 940px;
   text-align: center;
   color: #ffffff;
 }
@@ -317,11 +353,11 @@ h2 {
   text-align: center;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.75);
 }
-
-p {
-  font-size: 1.4em;
-  line-height: 1.2em;
-  color: #777;
+p.Text {
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  opacity: 0.9;
 }
 
 
@@ -440,4 +476,90 @@ p {
 
 @media screen and (max-width: 450px) {
   h1 { font-size: 2.1em; }
+}
+.Auto
+{
+  float: right;
+  width: 200px;
+  height: 100px;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.AutoName
+{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-right: 2px; 
+}
+.AutoImg
+{
+  border-radius: 50px;
+  
+  width: 60px;
+  height: 60px;
+
+}
+h4
+{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-left: 65px;
+}
+input
+{
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 35px;
+  float: left;
+  text-align: center;
+  border-radius: 50px;
+}
+.KomButton
+{
+  border-radius: 50px;
+  background-color: #18A0FB;
+  color: white;
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
+  border: 2px solid #18A0FB;
+  margin-left: 400px;
+  font-size: 18px;
+}
+.AreaKom
+{
+  width:1000px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  text-align: left;
+}
+.Kommm
+{
+  margin-top: 1200px;
+}
+.Out
+{
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.Name{
+  font-size: 30px;
+  color: white;
+  margin-left: -87px;
+}
+.AreaKomOut
+{
+  width:1000px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  text-align: left;
 }
